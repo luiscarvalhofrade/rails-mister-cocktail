@@ -1,0 +1,9 @@
+<h1>Cocktails</h1>
+<p><%= "==========================="  %></p>
+
+<% @cocktails.each do |element| %>
+<p><%= element.id %>. <%= link_to element.name, cocktail_path(element) %></p>
+<% end %>
+
+<p><%= "===========================" %></p>
+<p><%= link_to "NEW COCKTAIL", new_cocktail_path %></p>
