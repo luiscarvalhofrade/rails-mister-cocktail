@@ -1,8 +1,8 @@
 <h1>Cocktails</h1>
 <p><%= "==========================="  %></p>
 
-<% @cocktails.each do |element| %>
-<p><%= element.id %>. <%= link_to element.name, cocktail_path(element) %></p>
+<% @cocktails.each do |cocktail| %>
+<p><%= cocktail.id %>. <%= link_to cocktail.name, cocktail %></p>
 <% end %>
 
 <p><%= "===========================" %></p>
